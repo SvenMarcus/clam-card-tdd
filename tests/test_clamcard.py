@@ -47,7 +47,7 @@ def test__passing_same_gate_in_station__doesnt_charge_additional_zone_A_price() 
     assert bank_account.charged == 0.01
 
 
-def test__passing_same_gate_in_station__doesnt_charge_additional_zone_A_price__() -> (
+def test__passing_same_gate_in_station_after_initial_checkin__doesnt_charge_additional_zone_A_price() -> (
     None
 ):
     bank_account = BankAccountSpy()
